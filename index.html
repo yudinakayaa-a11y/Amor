@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Nathália ❤️</title>
+    <style>
+        /* Fundo dark escuro com nuances românticas */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #120205, #1e0509);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* Efeito de máquina de escrever contínua para a frase no topo */
+        .typing-bg-container {
+            margin-bottom: 25px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .typing-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff4b6e;
+            text-shadow: 0 0 15px rgba(255, 75, 110, 0.7);
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #ff4b6e;
+            width: 0;
+            animation: 
+                typing 4s steps(12) infinite alternate,
+                blink 0.5s step-end infinite alternate;
+        }
+
+        @keyframes typing {
+            0% { width: 0; }
+            30% { width: 0; }
+            80% { width: 155px; } /* Largura do texto */
+            100% { width: 155px; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        /* Painel principal */
+        .profile-container {
+            background: rgba(30, 7, 12, 0.75);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 75, 110, 0.3);
+            border-radius: 24px;
+            padding: 30px;
+            max-width: 460px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 35px rgba(255, 75, 110, 0.25);
+        }
+
+        /* Moldura redonda para o close */
+        .profile-pic {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff4b6e;
+            box-shadow: 0 0 20px rgba(255, 75, 110, 0.5);
+            margin-bottom: 15px;
+        }
+
+        .top-signature {
+            font-size: 14px;
+            color: #ff4b6e;
+            margin-bottom: 5px;
+            text-shadow: 0 0 8px rgba(255, 75, 110, 0.5);
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 11px;
+            color: #ffb3c1;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Grade estilizada para as fotos */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .grid-item {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 75, 110, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            aspect-ratio: 4 / 3;
+        }
+
+        .grid-item.featured {
+            grid-column: span 2;
+            aspect-ratio: 16 / 9;
+        }
+
+        .grid-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Caixa estilizada para os textos apaixonados */
+        .phrases-box {
+            background: rgba(20, 4, 7, 0.6);
+            padding: 22px;
+            border-radius: 16px;
+            text-align: left;
+            margin-top: 25px;
+            border-left: 4px solid #ff4b6e;
+            box-shadow: inset 0 0 15px rgba(255, 75, 110, 0.05);
+        }
+
+        .phrases-box p {
+            margin: 14px 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #ffe5ec;
+            font-style: italic;
+        }
+
+        .phrases-box p:first-child {
+            margin-top: 0;
+        }
+
+        .phrases-box p:last-child {
+            margin-bottom: 0;
+            font-weight: bold;
+            color: #ff4b6e;
+            font-style: normal;
+            text-shadow: 0 0 5px rgba(255, 75, 110, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container da frase digitando dinamicamente -->
+    <div class="typing-bg-container">
+        <div class="typing-text">i love you❤️</div>
+    </div>
+
+    <div class="profile-container">
+        <!-- Foto de perfil principal -->
+        <img src="https://discordapp.com&" alt="Foto de Perfil" class="profile-pic">
+
+        <div class="top-signature">💖 MY ONLY LOVE 💖</div>
+        <div class="subtitle">Forever & Always</div>
+
+        <!-- Grade com as fotos selecionadas -->
+        <div class="photo-grid">
+            <!-- Foto em Destaque (Cabelo) -->
+            <div class="grid-item featured">
+                <img src="https://discordapp.com&" class="grid-photo" alt="Foto Cabelo">
+            </div>
+            <!-- Nova foto adicionada no pôr do sol -->
+            <div class="grid-item">
+                <img src="https://cdn.discordapp.com/attachments/1530693035472584851/1538671292713271461/1c5b69f0-9ae6-4f17-81dd-6f4f57bb12f7.png?ex=6a8386cf&is=6a82354f&hm=d5d2a6fec0c51cad4b72f343cb62a48e6cdd7341187156e7f0f2c39e7d335a59&" class="grid-photo" alt="Foto Pôr do Sol">
+            </div>
+            <!-- Foto com efeito borrado -->
+            <div class="grid-item">
+                <img src="https://discordapp.com&" class="grid-photo" alt="Foto de Lado">
+            </div>
+            <!-- Foto sorrindo -->
+            <div class="grid-item">
+                <img src="https://discordapp.com&" class="grid-photo" alt="Foto 3">
+            </div>
+        </div>
+
+        <!-- Suas frases apaixonadas -->
+        <div class="phrases-box">
+            <p>👁️ "Stalker? No, this is love."</p>
+            <p>🌹 "Who do you love? The most beautiful woman in the world."</p>
+            <p>❤️ "I love you... Nathália ❤️"</p>
+        </div>
+    </div>
+
+</body>
+                  </html>
+                  
